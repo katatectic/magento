@@ -1,19 +1,11 @@
-<h1>This is my template, there are many like it, but this one is mine.</h1>
-
-<ol>
-	<?php 
-		/*$array = $block->setFilms();
-		foreach ($array as $value) { */?>
-			<li><?php /*echo $value */?></li>
-		<?php/* } */?>		
-</ol>
+<h1>List of films 1</h1>
 
 <ol>
 	<?php 
 		$array = $block->setFilms();
 		$count = 1;
 		foreach ($array as $value) { ?>
-			<li><a href="<?= $block->getUrl('demo/show/' , ['title' => 'id'.$count.'']) ?>"><?php echo $value ?></a>
+			<li><a href="<?= $block->getUrl('api/index/show' , ['id' => $count]) ?>"><?php echo $value ?></a>
 			</li>
 		<?php $count++;
 		} ?>		

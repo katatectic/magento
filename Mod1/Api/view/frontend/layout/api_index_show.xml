@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <referenceContainer name="content">
-        <block template="film.phtml" class="Mod1\Api\Block\Main" name="mod1_api_block_main">
-                                    
+        <block template="film.phtml" class="Mod1\Api\Block\Show" name="mod1_api_block_show">
+        	
         </block>
     </referenceContainer>
 </page>

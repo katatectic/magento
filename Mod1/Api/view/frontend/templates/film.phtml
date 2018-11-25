@@ -1,1 +1,18 @@
-<h1>Film title</h1>
+<h1>Film description</h1>
+
+<?php if ($block->filmDescription()) { ?>
+
+	<h3>Film title: <span style="color: red; font-weight: bold;"><?php echo $block->filmDescription()['title']?></span>
+	</h3>
+
+	<h3>Film director: <span style="color: blue; font-weight: bold;"><?php echo $block->filmDescription()['director']?></span>
+	</h3>
+
+	<h3>Film description</h3>
+	<div><?php echo $block->filmDescription()['opening_crawl']?></div>
+<?php }
+	else { ?>
+	<h3 style="color: red;">No such film was found</h3>
+	<img src="https://vignette.wikia.nocookie.net/es.starwars/images/c/c0/Droid_stub.png/revision/latest?cb=20100323181045" style="width: 200px;">	
+<?php } ?>
+
